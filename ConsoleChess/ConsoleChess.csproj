@@ -41,6 +41,7 @@
     <ItemGroup>
         <Compile Include="BoardLayer\Board.cs" />
         <Compile Include="BoardLayer\Color.cs" />
+        <Compile Include="BoardLayer\CustomExceptions\BoardException.cs" />
         <Compile Include="BoardLayer\Piece.cs" />
         <Compile Include="BoardLayer\Position.cs" />
         <Compile Include="GameLayer\King.cs" />
