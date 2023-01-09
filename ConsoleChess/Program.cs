@@ -11,17 +11,19 @@ namespace ConsoleChess
         {
             try
             {
-                var board = new Board(8, 8);
-                board.InsertPiece(new Rook(board, Color.Black), 
-                    new Position(0,1));
-                board.InsertPiece(new King(board, Color.Black), 
-                    new Position(1,4));
-                
-                board.InsertPiece(new King(board, Color.White), 
-                    new Position(1,5));
-            
-                Screen.PrintBoard(board);
-                
+                var chessMatch = new ChessMatch();
+                while (!chessMatch.Finished)
+                {
+                    Console.Clear();
+                    Screen.PrintBoard(chessMatch.Board);
+                    Console.WriteLine();
+                    Console.Write("Origin: ");
+                    var origin = Screen.ReadPositionChess().ToPosition();
+                    Console.Write("Destiny: ");
+                    var destiny = Screen.ReadPositionChess().ToPosition();
+                    
+                    chessMatch.ExecuteMove(origin, destiny);
+                }
             }
             catch (BoardException e)
             {

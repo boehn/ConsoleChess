@@ -12,5 +12,10 @@ namespace ConsoleChess.BoardLayer
             Board = board;
             Color = color;
         }
+
+        public void IncrementMovesMade()
+        {
+            MovesMade++;
+        }
     }
 }
