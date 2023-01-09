@@ -44,6 +44,7 @@
         <Compile Include="BoardLayer\CustomExceptions\BoardException.cs" />
         <Compile Include="BoardLayer\Piece.cs" />
         <Compile Include="BoardLayer\Position.cs" />
+        <Compile Include="GameLayer\ChessPosition.cs" />
         <Compile Include="GameLayer\King.cs" />
         <Compile Include="GameLayer\Rook.cs" />
         <Compile Include="Program.cs" />
