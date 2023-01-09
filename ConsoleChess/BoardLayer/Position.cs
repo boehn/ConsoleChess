@@ -1,6 +1,4 @@
-using System.Text;
-
-namespace ConsoleChess.Board
+namespace ConsoleChess.BoardLayer
 {
     public class Position
     {

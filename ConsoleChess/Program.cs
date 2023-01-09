@@ -1,5 +1,6 @@
 ﻿using System;
-using ConsoleChess.Board;
+using ConsoleChess.BoardLayer;
+using ConsoleChess.GameLayer;
 
 namespace ConsoleChess
 {
@@ -7,10 +8,12 @@ namespace ConsoleChess
     {
         public static void Main(string[] args)
         {
-            var position = new Position(3, 4);
-
-            Console.WriteLine($"Position: {position}");
-
+            var board = new Board(8, 8);
+            board.InsertPiece(new Rook(board, Color.Black), 
+                new Position(1,3));
+            
+            Screen.PrintBoard(board);
+            Console.ReadLine();
         }
     }
 }

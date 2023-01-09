@@ -39,12 +39,15 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Board\Board.cs" />
-        <Compile Include="Board\Color.cs" />
-        <Compile Include="Board\Piece.cs" />
-        <Compile Include="Board\Position.cs" />
+        <Compile Include="BoardLayer\Board.cs" />
+        <Compile Include="BoardLayer\Color.cs" />
+        <Compile Include="BoardLayer\Piece.cs" />
+        <Compile Include="BoardLayer\Position.cs" />
+        <Compile Include="GameLayer\King.cs" />
+        <Compile Include="GameLayer\Rook.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="Screen.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
