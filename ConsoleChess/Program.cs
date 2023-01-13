@@ -16,9 +16,17 @@ namespace ConsoleChess
                 {
                     Console.Clear();
                     Screen.PrintBoard(chessMatch.Board);
+                    
                     Console.WriteLine();
                     Console.Write("Origin: ");
                     var origin = Screen.ReadPositionChess().ToPosition();
+
+                    var possibleMoves = chessMatch.Board.Piece(origin).PossibleMoves();
+                    
+                    Console.Clear();
+                    Screen.PrintBoard(chessMatch.Board, possibleMoves);
+                    
+                    Console.WriteLine();
                     Console.Write("Destiny: ");
                     var destiny = Screen.ReadPositionChess().ToPosition();
                     

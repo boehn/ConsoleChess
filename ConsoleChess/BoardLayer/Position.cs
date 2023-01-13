@@ -7,6 +7,11 @@ namespace ConsoleChess.BoardLayer
 
         public Position(int line, int column)
         {
+            SetValues(line, column);
+        }
+
+        public void SetValues(int line, int column)
+        {
             Line = line;
             Column = column;
         }
